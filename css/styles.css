@@ -499,6 +499,7 @@ img {
     transition: fill var(--anim);
 }
 .modal-title {
+    display: block;
     margin-bottom: 16px;
     font-weight: 500;
     font-size: 16px;
@@ -513,7 +514,7 @@ img {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-     color: #8E8F99;
+    color: #8E8F99;
     margin-bottom: 4px;
 }
 .form-wrapper {
@@ -550,6 +551,7 @@ img {
     width: 100%;
     height: 120px;
     border-radius: 4px;
+    margin-bottom: 16px;
     padding: 8px 16px;
     resize: none;
     outline: 1px solid var(--logo-second-cl);
@@ -561,4 +563,39 @@ img {
 }
 .form-comment:focus {
     outline: 1px solid var(--logo-first-cl);
+}
+.form-agreement {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+.form-check-input {
+    appearance: none;
+}
+.form-check-input:checked {
+    background-color: var(--accent-txt-cl);
+    border-color: var(--accent-txt-cl);
+}
+.form-agreement-text {
+    user-select: none;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
+    color: #8E8F99;
+}
+.form-agreement-link {
+    color: var(--logo-first-cl);
+}
+.unchecked {
+    opacity: 1;
+}
+.checked {
+    opacity: 0;
+}
+.form-check-input:checked + .form-icon-check > .unchecked {
+    opacity: 0;
+}
+.form-check-input:checked + .form-icon-check > .checked {
+    opacity: 1;
 }
