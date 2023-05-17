@@ -627,6 +627,7 @@ img {
     outline: transparent;
     border-radius: 4px;
     color: #fff;
+    padding-left: 16px;
 }
 .footer-form-tag {
     position: absolute;
@@ -640,6 +641,13 @@ img {
     align-items: center;
     letter-spacing: 0.04em;
     color: #FFFFFF;
+    background-color: var(--logo-second-cl);
+    transition: transform var(--anim);
+    padding-left: 3px;
+    padding-right: 3px;
+}
+.footer-form-input:focus + .footer-form-tag {
+    transform: translateY(-130%);
 }
 .footer-form-btn {
     display: flex;
