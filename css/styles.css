@@ -481,7 +481,6 @@ img {
     width: 24px;
     height: 24px;
     padding: 0;
-    margin-bottom: 24px;
     background: #E7E9FC;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -547,6 +546,7 @@ img {
     left: 16px;
     transform: translateY(-50%);
     pointer-events: none;
+    fill: var(--logo-second-cl);
 }
 .form-field:focus + .form-icon {
     fill: var(--logo-first-cl);
@@ -557,7 +557,6 @@ img {
     height: 120px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 4px;
-    margin-bottom: 16px;
     padding: 8px 16px;
     resize: none;
     font-weight: 400;
@@ -572,7 +571,6 @@ img {
 .form-agreement {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 8px;
     margin-bottom: 24px;
 }
@@ -582,6 +580,9 @@ img {
 .form-check-input:checked {
     background-color: var(--accent-txt-cl);
     border-color: var(--accent-txt-cl);
+}
+.form-comment-container {
+    margin-bottom: 16px;
 }
 .form-agreement-text {
     user-select: none;
